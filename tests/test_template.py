@@ -1,6 +1,7 @@
 import pytest
 
-from my_advent.day_template import a, b
+from my_advent.day_template import a as a
+from my_advent.day_template import b as b
 
 EXAMPLE_INPUT = [
     0,

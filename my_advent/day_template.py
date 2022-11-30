@@ -1,6 +1,6 @@
-from my_advent import get_todays_puzzle, MyPuzzle
+from pathlib import Path
 
-DAY = 0
+from my_advent import get_todays_puzzle, MyPuzzle
 
 
 def a(inputs: list[str]) -> int:
@@ -20,6 +20,8 @@ def solve_b(puzzle: MyPuzzle):
 
 
 if __name__ == "__main__":
-    my_puzzle = get_todays_puzzle(DAY)
+    # assumes the filename is always "day{day_nr}"
+    day_nr = int(Path(__file__).stem[3:])
+    my_puzzle = get_todays_puzzle(day_nr)
     # solve_a(my_puzzle)
     # solve_b(my_puzzle)
