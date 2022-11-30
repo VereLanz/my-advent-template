@@ -3,6 +3,8 @@ from typing import Any
 
 from aocd.models import Puzzle
 
+YEAR = 2021
+# TODO: update template year to actual year of repo!
 
 class MyPuzzle(Puzzle):
     def __init__(self, year: int, day: int):
@@ -16,6 +18,6 @@ class MyPuzzle(Puzzle):
         self.answer_b = answer
 
 
-def get_todays_puzzle(day: int, year: int = 2021):
+def get_todays_puzzle(day: int, year: int = YEAR):
     my_puzzle = MyPuzzle(year=year, day=day)
     return my_puzzle

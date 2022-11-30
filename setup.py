@@ -6,12 +6,11 @@ setup(
     packages=["my_advent"],
     author="VereLanz",
     author_email="verelanz@gmail.com",
-    description="My Advent of Code 2021",
+    description="My Advent of Code",
     install_requires=[
         "advent-of-code-data",
         "numpy",
         "scipy",
-        "pathfinding",
     ],
     tests_require=[
         "pytest",
