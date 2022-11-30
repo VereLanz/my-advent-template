@@ -6,8 +6,10 @@ from my_advent import get_todays_puzzle, MyPuzzle
 def a(inputs: list[str]) -> int:
     return 0
 
+
 def b(inputs: list[str]) -> int:
     return 0
+
 
 def solve_a(puzzle: MyPuzzle):
     answer_a = a(puzzle.input_lines)

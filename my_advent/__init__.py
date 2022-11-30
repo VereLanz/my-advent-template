@@ -5,6 +5,7 @@ from aocd.models import Puzzle
 YEAR = 2021
 # TODO: update template year to actual year of repo when using!
 
+
 class MyPuzzle(Puzzle):
     def __init__(self, year: int, day: int):
         super().__init__(year=year, day=day)
