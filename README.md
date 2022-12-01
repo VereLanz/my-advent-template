@@ -1,7 +1,10 @@
 # My Advent of Code TEMPLATE <a name="top"></a>
-[Find all the detailed official puzzle descriptions &#8594;](https://adventofcode.com/)  <!-- add year to URL -->
-<!--
-Using the utility library [advent-of-code-data](https://github.com/wimglenn/advent-of-code-data).
+[Find all the detailed official puzzle descriptions &#8594;](https://adventofcode.com/)
+
+<!-- 
+First: change or add current year in my_advent __init__.py, readme title and readme AoC URL above
+Start with: pip install -e .
+Daily run: python3.10 init_new_day.py <day_nr>
 -->
 
 <span style="font-size:large">
@@ -253,23 +256,4 @@ Using the utility library [advent-of-code-data](https://github.com/wimglenn/adve
 [top &#8593;](#top)
 
 
-
-
-<!---Daily Template
-
----
-## Day 
-### *name*
-[code &#8614;](https://github.com/VereLanz/my-advent-template/blob/main/my_advent/day.py)
-### Part One
--
-
-### Part Two
--
-
-[top &#8593;](#top)
-
-
-
--->
 
