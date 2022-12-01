@@ -23,7 +23,6 @@ if __name__ == "__main__":
     )
 
     # copy test_template into f"test_day{day_nr}".py
-
     with open(Path(here, "tests", "test_template.py"), "r") as template:
         test_content = template.read()
         test_content.replace(".day_template", f".day{day_nr}")
