@@ -8,13 +8,13 @@ EXAMPLE_INPUT = [
 ]
 
 
-@pytest.skip
-def test_example_one():
+@pytest.mark.skip
+def test_example_a():
     example_result = 0
     assert a(EXAMPLE_INPUT) == example_result
 
 
-@pytest.skip
-def test_example_two():
+@pytest.mark.skip
+def test_example_b():
     example_result = 0
     assert b(EXAMPLE_INPUT) == example_result
