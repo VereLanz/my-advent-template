@@ -5,8 +5,7 @@ import webbrowser
 
 from my_advent import YEAR
 
-README_DAILY_TEMPLATE = \
-"""### *title*
+README_DAILY_TEMPLATE = """### *title*
 [code &#8614;](https://github.com/VereLanz/my-advent-{year}/blob/main/my_advent/day{day_nr}.py)
 ### Part One
 -
@@ -43,8 +42,11 @@ if __name__ == "__main__":
     with open(here / "README.md", "r+") as readme:
         readme_content = readme.readlines()
         try:
-            day_idx = readme_content.index(f"## Day {day_nr}\n")  # should all exist for 1 to 25
-            readme_content.insert(day_idx + 1, day_readme)
+            # should all exist for 1 to 25
+            day_idx = readme_content.index(f"## Day {day_nr}\n")
+            # in case has to be rerun, but readme was already updated
+            if not readme_content[day_idx + 1].startswith("###"):
+                readme_content.insert(day_idx + 1, day_readme)
         except:
             # if for some reason key was not found, rewrite readme as it was
             pass
@@ -53,4 +55,6 @@ if __name__ == "__main__":
         readme.writelines(readme_content)
 
     # open challenge of the day
+    # also print link for re-use or in case browser did not open (e.g. WSL settings)
+    print(f"https://adventofcode.com/{YEAR}/day/{day_nr}")
     webbrowser.open(f"https://adventofcode.com/{YEAR}/day/{day_nr}")
